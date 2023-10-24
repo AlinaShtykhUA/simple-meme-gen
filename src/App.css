@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+.header {
+  background:  radial-gradient(circle, rgba(63,94,251,1) 0%, rgb(100, 70, 252) 100%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-logo{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header-logo img {
+  margin-right: 5px;
+}
+
+.main {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 15px;  
+}
+
+.form-input {
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form-input:focus{
+  outline: 1px solid #A818DA;
+}
+
+.form-button {
+  grid-column: 1 / -1;
+  border-radius: 5px;
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgb(100, 70, 252) 100%);
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.meme {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meme-img{
+  max-width: 100%;
+  object-fit: contain;
 }
+
+
+.meme-text{
+  position: absolute;
+  max-width: 350px;
+  text-align: center;
+  left: 50%;
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+
